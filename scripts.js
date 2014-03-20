@@ -5,7 +5,7 @@ var sellall = function()
   document.getElementById('UPALLB').onclick() //brings us to top;
   document.getElementById('PLACE1').onclick() //opens sell center;
   x=2;
-  while (x<18)
+  while (x<14)
   {
       document.getElementById('SB'+x).onclick();
       x++;
