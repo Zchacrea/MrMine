@@ -10,7 +10,7 @@ var sellall = function()
       document.getElementById('SB'+x).onclick();
       x++;
   }
-  document.getElementById('CLOSEs').onclick() //closes sell center;
+  document.getElementById('CLOSEs').onclick(); //closes sell center;
 }
 
 var findchests = function()
