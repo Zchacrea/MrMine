@@ -4,7 +4,12 @@ var sellall = function()
 {
   document.getElementById('UPALLB').onclick() //brings us to top;
   document.getElementById('PLACE1').onclick() //opens sell center;
-  document.getElementById('SB18').onclick()   //sells all minerals;
+  x=2;
+  while (x<18)
+  {
+      document.getElementById('SB'+x).onclick();
+      x++;
+  }
   document.getElementById('CLOSEs').onclick() //closes sell center;
 }
 
