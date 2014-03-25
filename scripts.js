@@ -20,13 +20,16 @@ var findchests = function()
   i=0;
   while (i<505)                                       //current Maximum Depth
   {
-    docuemnt.getElementById('DOWNB').onclick()        //takes us down one level
+    document.getElementById('DOWNB').onclick()        //takes us down one level
     letters.forEach(
       function(e)
         {
-          document.getElementById('L5'+e).onclick()   //clicks chest if over a miner
-          document.getElementById('OPENTIT').onclick()//opens chest
-          document.getElementById('OPENTIT').onclick()//closes chest
+          try{
+          document.getElementById('L5'+e).onclick();   //clicks chest if over a miner
+          document.getElementById('OPENIT').onclick();//opens chest
+          document.getElementById('OPENIT').onclick();//closes chest
+          }
+          catch(err){};
         }
       )
     i++;
